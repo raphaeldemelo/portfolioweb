@@ -13,7 +13,7 @@ margin: 0;
 
 export const Parallax = styled.section`
 padding: 40px 0;
-background-color: #ece7d5;
+background-color: #000;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -28,6 +28,17 @@ background-size: cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
+
+:after {
+content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  background: -moz-linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0) 45%, #000 100% );
+  background: -webkit-linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0) 45%, #000 100% );
+  background: linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0) 45%, #000 100% );
+}
 `;
 
 export const Titulo = styled.h1`
@@ -40,17 +51,20 @@ width: 100%;
 max-width: 720px;
 margin: 0 auto;
 padding: 0 20px;
+z-index: 99;
 `;
 
 export const Subtitulo = styled.h2`
 color: #fff;
 font-size: 30px;
 margin-bottom: 40px;
+z-index: 99;
 `;
 
 export const Texto = styled.p`
 color: #fff;
 margin-bottom: 40px;
+z-index: 99;
 
 p:last-child{
     margin-bottom: 0;
@@ -72,15 +86,17 @@ display: flex;
 justify-content: center;
 align-items: center;
 
+
+
 :after {
 content: "";
   height: 100%;
   width: 100%;
   position: absolute;
-  z-index: 8;
-  background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
-  background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+  z-index: 0;
+  background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 60%, #000 100% );
+  background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 60%, #000 100% );
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 60%, #000 100% );
 }
 `;
 
@@ -104,7 +120,7 @@ content: "";
   height: 100%;
   width: 100%;
   position: absolute;
-  z-index: 8;
+  z-index: 0;
   background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
   background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
