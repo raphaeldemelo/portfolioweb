@@ -11,15 +11,21 @@ import {
     Imagem2,
 } from './styles';
 import { Slide, Zoom } from 'react-reveal';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 
 export default function Home() {
     return (
         <Container>
+            <Header/>
             <Main>
                 <Parallax style={{ backgroundColor: '#292929' }}>
                     <Imagem>
-                        <Slide left>
-                            <Titulo>Raphael de Melo</Titulo>
+                        <Slide top>
+                            <Titulo style={{ fontWeight: 'lighter' }}>Oi, eu sou Raphael</Titulo>
+                        </Slide>
+                        <Slide bottom>
+                            <Titulo style={{ color: 'red' }}>Desenvolvedor Front-end</Titulo>
                         </Slide>
                     </Imagem>
                 </Parallax>
@@ -60,12 +66,13 @@ export default function Home() {
 
                 <Parallax>
                     <Imagem2>
-                        <Slide left>
-                                <Titulo>TESTANDO ALGO AQUI</Titulo>
+                        <Slide duration="2000" left>
+                            <Titulo>TESTANDO ALGO AQUI</Titulo>
                         </Slide>
                     </Imagem2>
                 </Parallax>
             </Main>
+            <Footer />
         </Container >
     );
 }

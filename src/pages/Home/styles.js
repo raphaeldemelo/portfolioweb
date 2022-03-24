@@ -83,6 +83,7 @@ background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 
