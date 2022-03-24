@@ -4,6 +4,8 @@ import {
   Conteudo,
   Botao,
   Texto,
+  TextoCriador,
+  ConteudoFooter,
 } from './styles';
 import { FiInstagram, FiLinkedin, FiFacebook, FiGithub } from 'react-icons/fi'
 
@@ -35,9 +37,12 @@ export default function Footer() {
         </Botao>
       </Conteudo>
 
-      <Conteudo>
-        <Texto>Portfólio de @Raphaeldemelo</Texto>
-      </Conteudo>
+      <ConteudoFooter>
+        <Texto>
+          Portfólio de
+        </Texto>
+        <TextoCriador>@Raphaeldemelo</TextoCriador>
+      </ConteudoFooter>
 
 
     </Container>
