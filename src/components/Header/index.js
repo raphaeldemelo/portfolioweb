@@ -3,17 +3,24 @@ import {
   Container,
   Conteudo,
   Texto,
+  Botao,
 } from './styles';
 
 export default function Header() {
   return (
     <Container>
       <Conteudo>
-        <Texto>Início</Texto>
+        <Botao>
+          <Texto>Início</Texto>
+        </Botao>
 
-        <Texto>Meus Projetos</Texto>
+        <Botao>
+          <Texto>Meus Projetos</Texto>
+        </Botao>
 
-        <Texto>Contato</Texto>
+        <Botao>
+          <Texto>Contato</Texto>
+        </Botao>
 
       </Conteudo>
     </Container>
