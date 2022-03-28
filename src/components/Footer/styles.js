@@ -5,6 +5,8 @@ background-color: #1d1d24;
 justify-content: center;
 width: 100%;
 display: flex;
+postition: absolute;
+bottom:0;
 
 @media screen and (max-width: 600px){
 flex-direction: column;
