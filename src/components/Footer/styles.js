@@ -52,8 +52,8 @@ display: inline-block;
 position: relative;
 
 
-:hover::after{
-content: '';
+:after{
+content: " ";
 position: absolute;
 width: 100%;
 transform: scaleX(0);
@@ -61,8 +61,8 @@ height:2px;
 bottom:-2px;
 left: 0;
 background-color: red;
-transform-origin: bottom right;
-transition: transform 0.5s ease-out;
+transform-origin: bottom left;
+transition: transform 0.15s ease-out;
 }
 
 :hover::after{
