@@ -45,8 +45,7 @@ width: 100%;
 `;
 
 export const Imagem = styled.img`
-width: 200px;
-height: 200px;
+width: 100%;
 border: 10px solid white;
 
 
