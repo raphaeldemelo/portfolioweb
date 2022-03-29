@@ -1,28 +1,49 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import {
-  Container,
-  Conteudo,
-  Texto,
-  Botao,
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu,
 } from './styles';
 
 export default function Header() {
   return (
-    <Container>
-      <Conteudo>
-        <Botao>
-          <Texto>Início</Texto>
-        </Botao>
+    <>
+      <Nav>
 
-        <Botao>
-          <Texto>Meus Projetos</Texto>
-        </Botao>
+        <Bars />
 
-        <Botao>
-          <Texto>Contato</Texto>
-        </Botao>
+        <NavMenu>
+          <Link
+            activeClass="active"
+            to="main"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <NavLink to='/apresentacao' activeStyle>
+              Apresentação
+            </NavLink>
+          </Link>
 
-      </Conteudo>
-    </Container>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <NavLink to='/projetos' activeStyle>
+              Projetos
+            </NavLink>
+          </Link>
+        </NavMenu>
+
+      </Nav>
+    </>
   );
 }
