@@ -5,13 +5,16 @@ background-color: #1d1d24;
 justify-content: center;
 width: 100%;
 display: flex;
-postition: absolute;
+postition: fixed;
 bottom:0;
+z-index: 99;
 
 @media screen and (max-width: 600px){
 flex-direction: column;
+postition: fixed;
 padding: 10px;
 height: 100px;
+z-index: 99;
 }
 `;
 

@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa';
 //codigo do video --------------------------------------------------------------------
 
 export const Nav = styled.nav`
-background: #1d1d24;
+background-color: #1d1d24;
 height: 80px;
 display: flex;
 justify-content: center;
@@ -51,7 +51,7 @@ display: none;
 color: #fff;
 
 @media screen and (max-width: 768px) {
-display: block;
+display: flex;
 position: absolute;
 top: 0;
 right: 0;

@@ -12,8 +12,8 @@ export default function Header() {
   return (
     <>
       <Nav>
-
         <Bars />
+
 
         <NavMenu>
           <Link
@@ -44,6 +44,7 @@ export default function Header() {
         </NavMenu>
 
       </Nav>
+
     </>
   );
 }
