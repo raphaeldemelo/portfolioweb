@@ -32,25 +32,23 @@ flex-direction: column;
 `;
 
 export const CardConteudo = styled.div`
-width: 50%;
+
 display: flex;
 justify-content: center;
+align-items: center;
+border-radius: 10px;
 
-@media screen and(max-width: 768px){
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
-    grid-gap: 1px;
-    justify-content: center;
+@media screen and (max-width:768px){
+width: 100%;
 }
+
 `;
 
 export const Imagem = styled.img`
-width: 70%;
+width: 200px;
+height: 200px;
 border: 10px solid white;
 
-@media screen and(max-width: 768px){
-width: 100%;
-}
 
 `;
 

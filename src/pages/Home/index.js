@@ -19,9 +19,12 @@ export default function Home() {
             <Header />
 
             <Conteudo>
-                <Card style={{ backgroundColor: 'blue' }}>
-
-                </Card>
+                <CardConteudo>
+                    <Card>
+                        <img src={FotoPerfil} alt='foto perfil' />
+                        <Titulo>Raphael de Melo</Titulo>
+                    </Card>
+                </CardConteudo>
             </Conteudo>
 
             <Footer />
