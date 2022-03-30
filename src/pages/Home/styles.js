@@ -22,13 +22,13 @@ flex-direction: row;
 
 export const Card = styled.div`
 background-color: rgba(37, 37, 37, 0.8);
-width: 90%;
-height: 80%;
+width: 80%;
+height: 50%;
 border-radius: 10px;
 display: flex;
 flex-direction: column;
-
-
+align-items: center;
+justify-content: center;
 `;
 
 export const CardConteudo = styled.div`
@@ -45,10 +45,8 @@ width: 100%;
 `;
 
 export const Imagem = styled.img`
-width: 100%;
+width: 50%;
 border: 10px solid white;
-
-
 `;
 
 export const Titulo = styled.h1`
