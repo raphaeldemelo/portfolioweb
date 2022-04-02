@@ -17,7 +17,6 @@ height: 100vh;
 display: flex;
 flex-direction: row;
 
-
 `;
 
 export const Card = styled.div`
@@ -38,15 +37,17 @@ justify-content: center;
 align-items: center;
 border-radius: 10px;
 
-@media screen and (max-width:768px){
-width: 100%;
-}
+
 
 `;
 
 export const Imagem = styled.img`
 width: 50%;
 border: 10px solid white;
+
+@media screen and (max-width:768px){
+width: 100%;
+}
 `;
 
 export const Titulo = styled.h1`
