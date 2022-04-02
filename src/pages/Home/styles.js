@@ -19,7 +19,6 @@ flex-direction: row;
 `;
 
 export const Card = styled.div`
-
 width: 90%;
 height: 50%;
 border-radius: 10px;
@@ -31,7 +30,7 @@ justify-content: center;
 export const CardConteudo = styled.div`
 background-color: rgba(37, 37, 37, 0.8);
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 border-radius: 10px;
 padding: 20px;
@@ -39,6 +38,12 @@ padding: 20px;
 @media screen and (max-width:768px){
 width: 90%;
 flex-direction: column;
+padding: 10px;
+}
+
+@media screen and (min-width:400px){
+width: 100%;
+flex-direction: row;
 padding: 10px;
 }
 `;

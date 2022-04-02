@@ -24,7 +24,7 @@ export default function Home() {
                         <Imagem src={FotoPerfil} alt='foto perfil' />
                     </Card>
                     <Card>
-                        <Titulo>Raphael de Melo</Titulo>
+                        <Titulo style={{marginLeft: 10}}>Raphael de Melo</Titulo>
                     </Card>
                 </CardConteudo>
             </Conteudo>
