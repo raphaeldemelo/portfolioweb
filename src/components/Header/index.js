@@ -24,7 +24,7 @@ export default function Header() {
             offset={-70}
             duration={500}
           >
-            <NavLink to='/apresentacao' activeStyle>
+            <NavLink to='/' activeStyle>
               Apresentação
             </NavLink>
           </Link>

@@ -19,13 +19,13 @@ display: flex;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
-height: 100%;
+width: 100%;
 cursor: pointer;
 
-&.active{
+/* &.active{
     color: #fff;
-    transform: scale(1.2) ;
-}
+    transform: scale(1.1) ;
+} */
 
 :after{
 content: " ";
@@ -34,7 +34,7 @@ width: 100%;
 height:2px;
 bottom:-20px;
 left: 0;
-background-color: red;
+//background-color: red;
 transform-origin: bottom left;
 transition: transform 0.15s ease-out;
 }
@@ -43,7 +43,6 @@ transition: transform 0.15s ease-out;
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
 `
 
 export const Bars = styled(FaBars)`
