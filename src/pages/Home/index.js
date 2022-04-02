@@ -22,6 +22,8 @@ export default function Home() {
                 <CardConteudo>
                     <Card>
                         <Imagem src={FotoPerfil} alt='foto perfil' />
+                    </Card>
+                    <Card>
                         <Titulo>Raphael de Melo</Titulo>
                     </Card>
                 </CardConteudo>

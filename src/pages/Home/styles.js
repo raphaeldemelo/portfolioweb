@@ -16,29 +16,31 @@ justify-content: center;
 height: 100vh;
 display: flex;
 flex-direction: row;
-
 `;
 
 export const Card = styled.div`
-background-color: rgba(37, 37, 37, 0.8);
-width: 80%;
+
+width: 90%;
 height: 50%;
 border-radius: 10px;
 display: flex;
-flex-direction: column;
 align-items: center;
 justify-content: center;
 `;
 
 export const CardConteudo = styled.div`
-
+background-color: rgba(37, 37, 37, 0.8);
 display: flex;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 border-radius: 10px;
+padding: 20px;
 
-
-
+@media screen and (max-width:768px){
+width: 90%;
+flex-direction: column;
+padding: 10px;
+}
 `;
 
 export const Imagem = styled.img`
@@ -47,9 +49,18 @@ border: 10px solid white;
 
 @media screen and (max-width:768px){
 width: 100%;
+margin-top: 10px;
 }
 `;
 
 export const Titulo = styled.h1`
 color: #fff;
+display: flex;
+text-align: center;
+
+@media screen and (max-width:768px){
+width: 100%;
+margin-top: 10px;
+}
+
 `;
