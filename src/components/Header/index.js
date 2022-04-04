@@ -8,11 +8,11 @@ import {
   NavMenu,
 } from './styles';
 
-export default function Header() {
+export default function Header({ setMenuIsVisible }) {
   return (
     <>
       <Nav>
-        <Bars />
+        <Bars onClick={() => setMenuIsVisible(true)} />
 
 
         <NavMenu>
